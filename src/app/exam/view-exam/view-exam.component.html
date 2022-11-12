@@ -1,0 +1,203 @@
+<aside class="right-side">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+       <h1>
+           Exam
+           <small><a routerLink="/exam/add">Add Exam</a></small>
+       </h1>
+       <ol class="breadcrumb">
+           <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+           <li class="active">Exam</li>
+       </ol>
+   </section>
+   <!-- Main content -->
+   <section class="content">
+             
+      <div class="row">
+          <div class="col-xs-12">
+              <div class="box">
+                  <div class="box-header">
+                      <h3 class="box-title">Exam List</h3>
+                      
+                  </div><!-- /.box-header -->
+                  <div class="box-body table-responsive re-custom-table">
+                    <table class="table table-hover table-bordered">
+                      <colgroup>
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                        <col width="20%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th >Name</th>
+                          <th >Exam Date</th>
+                          <th >Status</th>
+                          <th >Action</th>
+                          <th >Result</th>
+                        </tr>
+                      </thead>
+                      <tbody class="fixbody">
+                        <tr>
+                          <td colspan="5" class="subdrop">
+                            <table id="tabl1" class="table table-bordered one gapcls">
+                              <colgroup>
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                              </colgroup>
+                              <tbody>
+                                <tr class="mainhead" *ngFor="let listexam of examData; let i = index">
+                                  <td >{{listexam.name}}</td>
+                                  <td >{{listexam.exam_date}}</td>
+                                  <td *ngIf="listexam.status == 1">Active</td>
+                                  <td *ngIf="listexam.status == 0">InActive</td>
+                                  <td>
+                                    <a routerLink="/exam/edit/{{listexam._id}}" style="cursor:pointer"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    </a>
+                                    <a style="cursor:pointer;padding-left: 15px;" (click) = "delete_exam(listexam._id)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>  
+                                 </td>
+                                  <td  class="downarrow" (click)="clickSub('one')" >0 <i class="fa fa-arrow-down"></i></td>
+                                </tr>
+                                <tr class="re-hide">
+                                  <td colspan="5" class="padd-0">
+                                    <table class="table table-bordered">
+                                      <colgroup>
+                                        <col width="10%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="10%" />
+                                      </colgroup>
+                                      <thead>
+                                        <tr>
+                                          <th>ID</th>
+                                          <th>User</th>
+                                          <th>Date</th>
+                                          <th>Reason</th>
+                                          <th>Reason</th>
+                                          <th>Reason</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>Signs</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Signs</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" class="subdrop">
+                            <table class="table table-bordered two gapcls">
+                              <colgroup>
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="40%" />
+                              </colgroup>
+                              <tbody>
+                                <tr class="mainhead">
+                                  <td width="20%"> Bandit Signs</td>
+                                  <td width="20%">0</td>
+                                  <td width="20%">0</td>
+                                  <td width="40%" class="downarrow" (click)="clickSub('two')" >0 <i class="fa fa-arrow-down"></i></td>
+                                </tr>
+                                <tr class="re-hide one">
+                                  <td colspan="4" class="padd-0">
+                                    <table class="table table-bordered">
+                                      <colgroup>
+                                        <col width="10%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="20%" />
+                                        <col width="10%" />
+                                      </colgroup>
+                                      <thead>
+                                        <tr>
+                                          <th>ID</th>
+                                          <th>User</th>
+                                          <th>Date</th>
+                                          <th>Reason</th>
+                                          <th>Reason</th>
+                                          <th>Reason</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>Signs</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Signs</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                          <td>0</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="box-body table-responsive">
+                      <table class="table table-hover table-bordered">
+                          <tr>
+                              <th>Name</th>
+                              <th>Exam Date</th>
+                              <th>Status</th>
+                              <th>Action</th>
+                              <th>Result</th>
+                          </tr>
+                          <tr *ngFor="let listexam of examData; let i = index">
+                            <td>{{listexam.name}}</td>
+                            <td>{{listexam.exam_date}}</td>
+                            <td *ngIf="listexam.status == 1">Active</td>
+                            <td *ngIf="listexam.status == 0">InActive</td>
+                            <td>
+                                <a routerLink="/exam/edit/{{listexam._id}}" style="cursor:pointer"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                </a>
+                                <a style="cursor:pointer;padding-left: 15px;" (click) = "delete_exam(listexam._id)"><i class="fa fa-trash-o" aria-hidden="true"></i></a>  
+                             </td>
+                             <td class="downarrow">0 <i class="fa fa-arrow-down"></i></td>
+                        </tr>
+                      </table>
+                  </div><!-- /.box-body -->
+              </div><!-- /.box -->
+          </div>
+      </div>
+  </section><!-- /.content --> 
+  </aside><!-- /.right-side -->      

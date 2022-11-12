@@ -1,0 +1,30 @@
+<div class="form-box" id="login-box">
+    <div class="header">Sign In</div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <span class="alert-danger text-center">{{showmsg}}</span>
+        <div class="body bg-gray"> 
+            <div class="form-group">
+                <input
+                    type="text"
+                    class="form-control"
+                    name="email"
+                    autocomplete="nope"
+                    formControlName="email"
+                    placeholder="Enter your Email"
+                />
+            </div>
+            <div class="form-group"> 
+                <input 
+                    type="password" 
+                    class="form-control" 
+                    placeholder="Password"
+                    name="password"
+                    formControlName="password"                        
+                >
+            </div>          
+        </div>
+        <div class="footer">                                                               
+            <button type="submit" class="btn bg-orange btn-block">Sign me in</button>  
+        </div>
+    </form>
+</div>

@@ -1,0 +1,126 @@
+
+    <!-- Right side column. Contains the navbar and content of the page -->
+    <aside class="right-side">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Add Teacher 
+                <small> </small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                <li class="active">Teacher Forms</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-3">
+                    <div class="box box-danger">
+                        <div class="box-header">
+                            <h3 class="box-title">Add Teacher Information</h3>
+                        </div>
+                        <!-- form start -->
+                        <form role="form">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">First name</label>
+                                    <input type="text" class="form-control" id="firstname" placeholder="First name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Last name</label>
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="conformInputPassword1">Conform Password</label>
+                                    <input type="password" class="form-control" id="conformInputPassword1" placeholder="Conform Password">
+                                </div>
+                                <!-- Date dd/mm/yyyy -->
+                                <div class="form-group">
+                                    <label>Date masks:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask/>
+                                    </div><!-- /.input group -->
+                                </div><!-- /.form group -->
+
+                                <!-- time Picker -->
+                                <div class="bootstrap-timepicker">
+                                    <div class="form-group">
+                                        <label>Time picker:</label>
+                                        <div class="input-group">                                            
+                                            <input type="text" class="form-control timepicker"/>
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-clock-o"></i>
+                                            </div>
+                                        </div><!-- /.input group -->
+                                    </div><!-- /.form group -->
+                                </div>
+
+                                <!-- phone mask -->
+                                <div class="form-group">
+                                    <label>US phone mask:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <input type="text" class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask/>
+                                    </div><!-- /.input group -->
+                                </div><!-- /.form group -->
+
+                                <!-- IP mask -->
+                                <div class="form-group">
+                                    <label>IP mask:</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-laptop"></i>
+                                        </div>
+                                        <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask/>
+                                    </div><!-- /.input group -->
+                                </div><!-- /.form group -->
+
+                                <!-- checkbox -->
+                                <div class="form-group">
+                                    <label>
+                                        <input type="radio" name="r2" class="flat-red" checked/>
+                                        Men
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="r2" class="flat-red"/>
+                                        woman
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputFile">File input</label>
+                                    <input type="file" id="exampleInputFile">
+                                    <p class="help-block">Example block-level help text here.</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Check me out
+                                    </label>
+                                </div>
+                            </div><!-- /.box-body -->
+
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div><!-- /.box -->
+                </div><!-- /.col (left) -->
+            </div><!-- /.row -->                    
+
+        </section><!-- /.content -->
+    </aside><!-- /.right-side -->   

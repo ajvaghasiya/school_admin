@@ -1,0 +1,71 @@
+<aside class="left-side sidebar-offcanvas">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="active">
+                <a routerLink="/">
+                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="javascript::">
+                    <i class="fa fa-edit"></i> <span>Teachers</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a routerLink="/teachers"><i class="fa fa-angle-double-right"></i> Teachers</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="javascript::">
+                    <i class="fa fa-edit"></i> <span>User</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a routerLink="/auth/add-user"><i class="fa fa-angle-double-right"></i> Add User</a></li>
+                    <li><a routerLink="/auth/user"><i class="fa fa-angle-double-right"></i> View Student</a></li>
+                    <li><a routerLink="/auth/teacher-list"><i class="fa fa-angle-double-right"></i> View Teacher</a></li>
+                    <li><a routerLink="/auth/admin-list"><i class="fa fa-angle-double-right"></i> View Admin</a></li>
+                </ul>
+            </li>
+           <li class="treeview">
+                <a href="javascript::">
+                    <i class="fa fa-table"></i> <span>Subject</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a routerLink="/subject/view"><i class="fa fa-angle-double-right"></i> View Subject</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="javascript::">
+                    <i class="fa fa-table"></i> <span>Class</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a routerLink="/class/view"><i class="fa fa-angle-double-right"></i> View Class</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="javascript::">
+                    <i class="fa fa-table"></i> <span>Exam</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a routerLink="/exam/view"><i class="fa fa-angle-double-right"></i> View Exam</a></li>
+                </ul>
+            </li>
+            <!--  <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-folder"></i> <span>Examples</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="#"><i class="fa fa-angle-double-right"></i> Invoice</a></li>
+                </ul>
+            </li> -->
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>
